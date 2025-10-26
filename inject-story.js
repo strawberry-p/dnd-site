@@ -27,13 +27,13 @@ function insert_campaign(obj) {
     memberCountID = strID+"count"
     charClassID = strID+"charclass"
     divID = strID+"div"
-    HTML = "<div class='story-card' id='"+divID+"'><p class='entitled' id='"+entitledId+"'></p> <p><span id='"+charTextID+"'></span> <span id='"+charClassID+"'></span> <span id='"+memberCountID+"'></span></p>" //what the helly is this. i hate JS.
+    HTML = "<div class='story-card' id='"+divID+"'><a href='story/"+strID+"'><p class='entitled' id='"+entitledId+"'></p> <p><span id='"+charTextID+"'></span> <span id='"+charClassID+"'></span> <span id='"+memberCountID+"'></span></p></a></div>" //what the helly is this. i hate JS.
     if (true) {console.log(HTML)}
     parentDiv.innerHTML = parentDiv.innerHTML+HTML
     document.getElementById(entitledId).innerText = obj.name
     document.getElementById(charTextID).innerText = obj.charName
     document.getElementById(memberCountID).innerText = obj.memberCount
-    parentDiv.getElementById(charClassID).innerText = obj.charClass
+    document.getElementById(charClassID).innerText = obj.charClass
 }
 console.log("inject started")
 placeholder()

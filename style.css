@@ -1,3 +1,7 @@
+body {
+    font-family: Calibri, sans-serif
+}
+
 .flex-container {
     display: grid;
     justify-content: center;
@@ -5,11 +9,6 @@
     grid-template-rows: 1fr;
 }
 
-#login-container {
-    border-style: solid;
-    border-width: 1px;
-    border-color: blue
-}
 
 .sidebar {
     text-align: left;
@@ -29,4 +28,34 @@
 
 a.nav-active {
     background-color: orange;
+}
+
+.story-card {
+    background-color:lightcyan;
+    border-color:cyan;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 12px
+}
+
+#list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.story-card {
+    width:fit-content;
+    min-width:10rem;
+}
+
+.story-card a {
+    text-decoration: none;
+    color: black;
+} /*should not look like a link*/
+
+.label {
+    margin: 5px;
 }

@@ -7,9 +7,10 @@ function placeholder() {
 
 async function session_info() {
     res = await fetch("/session")
+    return res
 }
 
-function auth_values() {
+function ret_auth_values() {
     return [authed,username]
 }
 
