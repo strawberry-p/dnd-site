@@ -3,11 +3,14 @@
     --light-fill-color: #D7C7C1;
     --fill-color: #C7B1A8;
     --border-color: #7A443E;
+    --dark-color: #442622;
+    --link-color: #444022;
 }
 
 body {
     font-family: Calibri, sans-serif;
     background-color: var(--bg-color);
+    color: var(--dark-color);
 }
 
 .flex-container {
@@ -76,4 +79,8 @@ a.nav-active {
 
 .label {
     margin: 5px;
+}
+
+a.link {
+    color: var(--link-color)
 }
