@@ -1,5 +1,13 @@
+:root {
+    --bg-color: #E5E2DC;
+    --light-fill-color: #D7C7C1;
+    --fill-color: #C7B1A8;
+    --border-color: #7A443E;
+}
+
 body {
-    font-family: Calibri, sans-serif
+    font-family: Calibri, sans-serif;
+    background-color: var(--bg-color);
 }
 
 .flex-container {
@@ -32,8 +40,8 @@ a.nav-active {
 }
 
 .story-card {
-    background-color:lightcyan;
-    border-color:cyan;
+    background-color: var(--fill-color);
+    border-color: var(--border-color);
     border-style: solid;
     border-width: 3px;
     border-radius: 12px;
@@ -56,6 +64,15 @@ a.nav-active {
     text-decoration: none;
     color: black;
 } /*should not look like a link*/
+
+.member-count {
+    border: dotted;
+    border-color: var(--border-color);
+    border-radius: 6px;
+    border-width: 2px;
+    padding: 3px;
+    margin-left: 2em; /*visual separation between player character and the member count*/
+}
 
 .label {
     margin: 5px;
