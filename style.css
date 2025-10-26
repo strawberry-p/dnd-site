@@ -19,7 +19,8 @@ body {
     justify-self: left;
     align-self:self-start;
     text-align:left;
-}
+} /* sidebar and its associated flex-container prob unused
+because i don't even plan on having that many pages for them*/
 
 .sidebar a {
     display:block;
