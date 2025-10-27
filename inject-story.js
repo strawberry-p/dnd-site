@@ -1,21 +1,3 @@
-let storyList = []
-class Campaign {
-    constructor (ID,name,memberCount,characterName,charID,charClass) {
-        this.ID = ID
-        this.name = name
-        this.memberCount = memberCount
-        this.charName = characterName
-        this.charID = charID
-        this.charClass = charClass
-    }
-}
-function placeholder() {
-    res = []
-    res[0] = new Campaign(0,"bleh",3,"Meeple",0,"Barbarian")
-    res[1] = new Campaign(1,"dragoons",5,"Orpheus",1,"Paladin")
-    storyList = res
-    return res
-}
 
 function insert_campaign(obj) {
     let parentDiv = document.getElementById("list-container")
@@ -36,7 +18,6 @@ function insert_campaign(obj) {
     document.getElementById(charClassID).innerText = "("+obj.charClass+")   "
 }
 console.log("inject started")
-placeholder()
 for (let i=0;i<storyList.length;i++) {
     console.log(storyList[i])
     console.log(storyList[i].ID)
