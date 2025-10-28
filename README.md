@@ -7,8 +7,8 @@ A site for working with some DnD-related things: displaying your characters or c
 
 [all pages are currently frontend-only]
 
-- Login/register
-- Campaigns - list of your DnD games
+- [Login](https://strawberry-p.github.io/dnd-site-demo/login)/[register](https://strawberry-p.github.io/dnd-site-demo/register)
+- [Campaigns](https://strawberry-p.github.io/dnd-site-demo/campaigns) - list of your DnD games
 - Story - page for a single DnD game, with quick info about it
 - Characters - list of characters you made (since you can reuse them between games sometimes)
 
