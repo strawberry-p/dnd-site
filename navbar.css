@@ -1,0 +1,24 @@
+.nav-item {
+    padding: 1em 2em;
+    margin: 0px;
+    background-color: var(--dark-color);
+}
+.nav-item:hover {
+    background-color: var(--border-color)
+}
+.current {
+    background-color: var(--link-color);
+}
+#navbar-container {
+    font-size: 1.2rem;
+    display: flex;
+    color: var(--bg-color,white)
+}
+
+#navbar-container ul {
+    list-style: none;
+    display: flex;
+}
+nav {
+    background-color: var(--dark-color);
+}
