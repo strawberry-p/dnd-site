@@ -7,7 +7,7 @@ function inject_character(obj) {
     raceID = strID+"race"
     strLevel = obj.lvl
     divID = strID+"div"
-    listDiv.innerHTML = listDiv.innerHTML + "<div class='character-card' id='"+divID+"'></div>"
+    listDiv.innerHTML = listDiv.innerHTML + "<div data-img='img/"+obj.race+".png' class='character-card' id='"+divID+"'></div>"
     let div = document.getElementById(divID)
     div.innerHTML = div.innerHTML+"<p id='"+nameID+"'></p>"+"<p><span id='"+raceID+"'></span> <span id='"+classID+"'></span> (lvl "+strLevel+")</p>"
     strClass = ""
