@@ -1,6 +1,6 @@
 const navElem = document.getElementById("page-nav")
 const rootURL = ''
-const navURL = ''
+const navURL = 'navbar/'
 async function inject_navbar() {
     let res = await fetch(rootURL+navURL+'navbar.html')
     let resTxt = await res.text()
