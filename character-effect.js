@@ -20,5 +20,5 @@ card.addEventListener('mouseenter',()=>{
     })
 
 })
-card.addEventListener('mouseleave',() => {hoverImg.style.opacity = 0})
+card.addEventListener('mouseleave',() => {hoverImg.style.opacity = 0; setTimeout(()=>hoverImg.src = '',3000)})
 })
