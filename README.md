@@ -24,5 +24,6 @@ A site for working with some DnD-related things: displaying your characters or c
 - Added a navbar to all pages
 - Added Character data models
 - Added placeholder data loading on /characters
+- -||- for /story (the template campaign page, accesible from all single campaign links which i temporarily overwrote)
 - Added a silly hover jumpscare effect to character info cards for this week's Spooky theme
 - Started working on dark mode
