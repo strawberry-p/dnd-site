@@ -32,6 +32,10 @@ function user_char_placeholder() {
     charList[1].spslots[1] = 1
     charList[2].cantrips = ["Chaos Bolt"]
     charList[2].sp1 = ["Fireball"]
+    //add links to respective story pages
+    charList[0].campaigns = [[1,"Overlegend"]]
+    charList[1].campaigns = [[0,"Siege of Zach Latta's left hand"]]
+    charList[2].campaigns = [[1,"Overlegend"]]
 }
 
 char_placeholder()

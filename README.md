@@ -18,3 +18,11 @@ A site for working with some DnD-related things: displaying your characters or c
 - Improved css basically everywhere
 - Fixed data loading on /campaigns
 - Started working on the /story frontend page
+
+## Changes #2
+
+- Added a navbar to all pages
+- Added Character data models
+- Added placeholder data loading on /characters
+- Added a silly hover jumpscare effect to character info cards for this week's Spooky theme
+- Started working on dark mode

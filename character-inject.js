@@ -10,6 +10,19 @@ function inject_character(obj) {
     listDiv.innerHTML = listDiv.innerHTML + "<div data-img='img/"+obj.race+".png' class='character-card' id='"+divID+"'></div>"
     let div = document.getElementById(divID)
     div.innerHTML = div.innerHTML+"<p id='"+nameID+"'></p>"+"<p><span id='"+raceID+"'></span> <span id='"+classID+"'></span> (lvl "+strLevel+")</p>"
+    if (typeof obj.campaigns[0] != 'undefined') {
+    strCampaignLinks = ""
+    for (let i=0;i<obj.campaigns.length;i++) {
+        let num = obj.campaigns[i][0]
+        let campaignName = obj.campaigns[i][1]
+        if (false) {
+        strCampaignLinks = strCampaignLinks+"<a class='campaign-links link' href='"+rootURL+''+"story/"+num+"'>"+campaignName+"</a>, "} else {
+        strCampaignLinks = strCampaignLinks+"<a class='campaign-links link' href='"+rootURL+''+"story'>"+campaignName+"</a>, "} //replace the numbered links with a link to the placeholder page before i set up the actual generated content
+    }
+    if (strCampaignLinks != "") {strCampaignLinks = strCampaignLinks.slice(0,strCampaignLinks.length-2)}
+    console.log(strCampaignLinks)
+    div.innerHTML = div.innerHTML+"<p>"+strCampaignLinks+"</p>"
+    } else {console.log("no campaign links in "+obj.name)} //protected against objects with nonexistent campaign links
     strClass = ""
     for (let i=0; i<obj.spec.length; i++) {
         strClass = strClass+obj.spec[i]+"-"

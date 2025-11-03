@@ -24,3 +24,4 @@
 nav {
     background-color: var(--dark-color);
 }
+#nav-login {justify-self: right; align-self: right;}
